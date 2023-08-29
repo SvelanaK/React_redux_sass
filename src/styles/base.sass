@@ -1,3 +1,38 @@
 $main-color: #F1F2F3
 $white-color: #FFFF
 $dark-grey: rgba(97, 111, 130, 1)
+$blue-color: rgba(65, 152, 197, 1)
+$light-grey: rgba(205, 205, 205, 1)
+
+@mixin icons($icon, $position)
+  background: #{$position}% / 20px no-repeat url('../public/icons-svg/#{$icon}.svg')
+
+@mixin container-background($color)
+  border: 1px solid $white-color
+  border-radius: 4px
+  background-color: $color
+  box-shadow: 0 2px 10px 1px rgba(0, 0, 255, .1)
+
+@mixin container-center
+  display: flex
+  align-items: center
+
+@mixin container-space-between
+  display: flex
+  justify-content: space-between
+
+@mixin action-button
+  color: $dark-grey
+  border: none
+  cursor: pointer
+  background-color: $main-color
+
+@mixin chip-style($color, $space)
+  background-color: $color
+  margin-left: #{$space}px
+  border-radius: 20px
+  padding: 5px
+  min-width: 30px
+  font-size: 12px
+  color: $white-color
+  text-align: center

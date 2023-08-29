@@ -1,27 +1,27 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 function Search() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="item-container">
+    <div className='item-container'>
       {open ? (
-        <div className="buttons-container">
-          <input className="search-input"></input>
+        <div className='buttons-container'>
+          <input className='search-input'></input>
           <button
-            className="close-button"
+            className='close-button'
             onClick={() => setOpen(false)}
           ></button>
         </div>
       ) : (
-        <div className="buttons-container">
+        <div className='buttons-container'>
           <button
-            className="search-button"
+            className='search-button'
             onClick={() => setOpen(true)}
           ></button>
           <div>
-            <button className="filter-button"></button>
-            <button className="add-button"></button>
+            <button className='filter-button'></button>
+            <button className='add-button'></button>
           </div>
         </div>
       )}
