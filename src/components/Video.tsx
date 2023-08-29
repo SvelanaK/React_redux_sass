@@ -16,7 +16,6 @@ function Video() {
                 <div>{item.name}</div>
                 <div className='video-author'>{item.author}</div>
               </div>
-
               <div className='video-date'>{item.date}</div>
             </div>
           </a>

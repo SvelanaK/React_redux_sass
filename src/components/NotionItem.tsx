@@ -11,7 +11,10 @@ function NotionItem({ notion }: INotionProps) {
           <span>{notion.date}</span>
           {notion.text}
         </div>
-        <button className={`more-button ${openNotion ? 'more-button-active' : ''}`} onClick={() => setOpenNotion(!openNotion)}></button>
+        <button
+          className={`more-button ${openNotion ? 'more-button-active' : ''}`}
+          onClick={() => setOpenNotion(!openNotion)}>
+        </button>
         {openNotion &&
           <ul className='modal-more'>
             <li>Изменить</li>
